@@ -1,21 +1,24 @@
 <?php
-public class OperationFactory{
-	public static creatOperate($operate){
+class OperationFactory{
+
+
+	public static function creatOperate($operate){
+        $operation = null;
 		switch ($operate){
 			case "+":
-				operation = new OperationAdd();
+				$operation = new OperationAdd();
 				break;
 			case "-":
-				operation = new OperationSub();
+                $operation = new OperationSub();
 				break;
 			case "*":
-				operation = new OperationMul();
+                $operation = new OperationMul();
 				break;
 			case "/":
-				operation = new OperationDiv();
+                $operation = new OperationDiv();
 				break;
 		}
-		return operation;
+		return $operation;
 	}
 }
 

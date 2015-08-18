@@ -3,19 +3,19 @@ abstract class Operation{
 	private $numberA = 0;
 	private $numberB = 0;
 
-	public set_numberA($numberA){
+	public function set_numberA($numberA){
 		$this->numberA = $numberA;
 	}
 
-	public get_numberA($numberA){
+	public function get_numberA(){
 		return $this->numberA;
 	}
 
-	public set_numberB($numberB){
+	public function set_numberB($numberB){
 		$this->numberB = $numberB;
 	}
 
-	public get_numberB($numberB){
+	public function get_numberB(){
 		return $this->numberB;
 	}
 
