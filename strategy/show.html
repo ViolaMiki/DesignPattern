@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <script src="../jquery-1.11.3.js"></script>
+</head>
+  <form action="./control.php" method="post">
+    总价：<input type="text" id="price" name="price"><br/>
+    优惠：
+    <select id="type" name="type">
+        <option value="nomal">无优惠</option>
+        <option value="rebate">打折</option>
+        <option value="return">返利</option>
+    </select><br/>
+    <input type="submit" value="确认">
+  </form>
+  <div id="solution"></div>
+</html>
